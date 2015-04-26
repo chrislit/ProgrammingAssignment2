@@ -1,7 +1,12 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Create a matrix that cacehes its inverse
+## returns a list consisting of functions to:
+### set the value of the matrix
+### get the value of the matrix
+### set the value of the matrix's inverse
+### get the value of the matrix's inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -10,11 +15,11 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   get <- function() x
-  setmean <- function(mean) m <<- mean
-  getmean <- function() m
+  setinverse <- function(solve) m <<- solve
+  getinverse <- function() m
   list(set = set, get = get,
-       setmean = setmean,
-       getmean = getmean)
+       setinverse = setinverse,
+       getinverse = getinverse)
 }
 
 
