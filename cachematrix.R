@@ -1,5 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Code for a caching matrix inverter
 
 ## Create a matrix that cacehes its inverse
 ## returns a list consisting of functions to:
